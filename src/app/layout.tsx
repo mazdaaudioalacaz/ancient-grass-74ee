@@ -4,16 +4,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  verification: {
-    google: 'google',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
-    other: {
-      me: ['my-email', 'my-link'],
-    },
-  },
-}
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,4 +21,15 @@ export default function RootLayout({
       <body className={inter.className}>{children}</body>
     </html>
   );
+}
+
+export const metadata = {
+  verification: {
+    google: 'google',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['my-email', 'my-link'],
+    },
+  },
 }
